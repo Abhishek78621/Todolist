@@ -13,8 +13,8 @@ const getLocalItems = () =>{
 
 
 function TodoList() {
+    const [newTodo, setNewTodo] = useState('');
   const [todos, setTodos] = useState(getLocalItems());
-  const [newTodo, setNewTodo] = useState('');
   const[toggle,setToggle]=useState(true);
 const [editTodo, setEditTodo] = useState(null);
   
@@ -26,7 +26,7 @@ const [editTodo, setEditTodo] = useState(null);
       setTodos(
         todos.map((elm) =>{
        if(elm.id===editTodo){
-      return {...elm,name:newTodo}
+      return {[...elm,name:newTodo]}
           }
             return elm;
           
