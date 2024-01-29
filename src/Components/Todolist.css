@@ -95,10 +95,10 @@
     
     
   }
- .list-item p{
+  p{
     margin-left: 10px;
-    font-size:25px;
-    font-weight:370;
+    font-size:20px;
+    font-weight:400;
   }
   
   .list-item-btns {
