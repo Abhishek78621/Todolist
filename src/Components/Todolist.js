@@ -92,7 +92,7 @@ setNewTodo(editedItems.name);
               return (
 <div className="list-container" key={elm.id}>
  <div className="list-item" >
-   <p>{elm.id.name}</p>
+   <h3>{elm.id.name}</h3>
  </div>
 <div className="list-item-btns">
 <button className="edit-btn" onClick={()=>editItems(elm.id)}>Edit</button>
