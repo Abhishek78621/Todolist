@@ -26,7 +26,7 @@ const [editTodo, setEditTodo] = useState(null);
       setTodos(
         todos.map((elm) =>{
        if(elm.id===editTodo){
-      return {[...elm,name:newTodo]}
+      return {...elm,name:newTodo}
           }
             return elm;
           
